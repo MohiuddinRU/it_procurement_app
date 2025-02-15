@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_it_procurement_it_procurement,it_procurement.it_procurement,model_it_procurement_it_procurement,base.group_user,1,1,1,1
+access_procurement_team,access_procurement_team,model_purchase_order,group_procurement_team,1,1,1,1
+access_coo,access_coo,model_purchase_order,group_coo,1,0,0,0
+access_md,access_md,model_purchase_order,group_md,1,0,0,0
+access_vendor,access_vendor,model_purchase_order,group_vendor,1,0,0,0
