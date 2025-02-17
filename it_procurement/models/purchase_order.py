@@ -3,5 +3,5 @@
 from odoo import models, fields, api
 
 class PurchaseOrder(models.Model):
-    _name = 'purchase.order'
+    _inherit = 'purchase.order'
     _description = 'Purchase Order'

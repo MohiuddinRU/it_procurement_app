@@ -11,8 +11,8 @@
     "version": "0.0.1",
     "depends": ["base", "purchase"],
     "data": [
-        "security/ir.model.access.csv",
         "security/security.xml",
+        "security/ir.model.access.csv",
         "security/purchase_order_rules.xml",
         "views/views.xml",
         "views/templates.xml",
