@@ -2,13 +2,13 @@
     <data noupdate="1">
         <record id="rule_procurement_team" model="ir.rule">
             <field name="name">Procurement Team: Full Access</field>
-            <field name="model_id" ref="model_purchase_order" />
+            <field name="model_id" ref="purchase.model_purchase_order" />
             <field name="groups" eval="[(4, ref('group_procurement_team'))]" />
             <field name="domain_force">[(1, '=', 1)]</field>
         </record>
         <record id="rule_coo" model="ir.rule">
             <field name="name">COO: View and Confirm Only</field>
-            <field name="model_id" ref="model_purchase_order" />
+            <field name="model_id" ref="purchase.model_purchase_order" />
             <field name="groups" eval="[(4, ref('group_coo'))]" />
             <field name="perm_read" eval="True" />
             <field name="perm_write" eval="False" />
@@ -18,7 +18,7 @@
         </record>
         <record id="rule_md" model="ir.rule">
             <field name="name">MD: Approve and View Only</field>
-            <field name="model_id" ref="model_purchase_order" />
+            <field name="model_id" ref="purchase.model_purchase_order" />
             <field name="groups" eval="[(4, ref('group_md'))]" />
             <field name="perm_read" eval="True" />
             <field name="perm_write" eval="False" />
@@ -28,7 +28,7 @@
         </record>
         <record id="rule_vendor" model="ir.rule">
             <field name="name">Vendor: View only individual Purchase Orders</field>
-            <field name="model_id" ref="model_purchase_order" />
+            <field name="model_id" ref="purchase.model_purchase_order" />
             <field name="groups" eval="[(4, ref('group_vendor'))]" />
             <field name="perm_create" eval="False" />
             <field name="perm_read" eval="True" />
